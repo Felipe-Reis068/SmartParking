@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>estacionamentoController</servlet-name>
+        <servlet-class>controller.EstacionamentoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VeiculoController</servlet-name>
+        <servlet-class>controller.VeiculoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProprietarioController</servlet-name>
+        <servlet-class>controller.ProprietarioController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MotoristaController</servlet-name>
+        <servlet-class>controller.MotoristaController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>estacionamentoController</servlet-name>
+        <url-pattern>/estacionamentoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VeiculoController</servlet-name>
+        <url-pattern>/VeiculoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProprietarioController</servlet-name>
+        <url-pattern>/ProprietarioController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MotoristaController</servlet-name>
+        <url-pattern>/MotoristaController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
