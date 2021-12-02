@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Buscar veiculo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center> <h1>Buscar Placa</h1>
+        <div>
+            <form name="consulta_de_veiculos" action="VeiculoController">
+               
+                <input type="text" name="placa_veiculo" id="placa" placeholder="Placa">   
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+        <div>
+            <form name="consulta_modelo" action="VeiculoController">
+                <br>
+                <input type="text" name="modelo_veiculo" id="modelo" placeholder="Modelo">   
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+        <div>
+            <form name="todos_os_veiculos" action="VeiculoController">
+                <br>
+                <input type="checkbox" name = "todos" value = "true">
+                <input type="submit" value="Buscar Todos">
+            </form>
+            <h3>Placas e modelos disponiveis: MZZ - 2542/Gol  - BZZ - 2652/Civic City - MZN - 4526/HB20 - MNN - 584/TOYOTA  - NMN - 5848/CIVC  - OGG - 5858/"HB20"</h3>
+        </div>
+    </center>
+       
+        
+    </body>
+</html>
